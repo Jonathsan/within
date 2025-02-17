@@ -9,4 +9,11 @@ export default defineConfig({
     react(),
   ],
   base: "/within",
+  build: {
+    rollupOptions: {
+      output: {
+        inlineDynamicImports: false, // Prevents inline scripts
+      },
+    },
+  },
 })
