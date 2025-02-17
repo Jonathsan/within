@@ -8,12 +8,6 @@ export default defineConfig({
     tailwindcss(),
     react(),
   ],
-  base: "/within",
-  build: {
-    rollupOptions: {
-      output: {
-        inlineDynamicImports: false, // Prevents inline scripts
-      },
-    },
-  },
+  base: "/within/",
+
 })
